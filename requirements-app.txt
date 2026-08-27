@@ -1,0 +1,14 @@
+# Minimal runtime dependencies for the FastAPI inference service.
+# The full dependency list (JupyterLab, Gradio, MLflow, etc.) lives in
+# requirements.txt for local development; the deployed image only needs these.
+fastapi==0.141.1
+joblib==1.5.3
+numpy==2.2.6
+openai==3.0.0
+pandas==2.3.3
+pydantic==2.12.5
+scikit-learn==1.8.0
+scipy==1.15.3
+shap==0.52.0
+uvicorn==0.40.0
+xgboost==3.4.1

@@ -1,0 +1,414 @@
+{
+  "customer_index": 38,
+  "predicted_probability": 0.7300524711608887,
+  "threshold": 0.525,
+  "predicted_class": 1,
+  "base_value": 0.022534077987074852,
+  "evidence": [
+    {
+      "feature": "numerical__MonthlyCharges",
+      "original_feature": "MonthlyCharges",
+      "value": 1.3766236259086442,
+      "value_display": "106.35",
+      "shap_value": 0.5015904307365417,
+      "direction": "toward churn",
+      "abs_shap": 0.5015904307365417
+    },
+    {
+      "feature": "numerical__tenure",
+      "original_feature": "tenure",
+      "value": 0.06896927861711691,
+      "value_display": "34",
+      "shap_value": -0.47710371017456055,
+      "direction": "away from churn",
+      "abs_shap": 0.47710371017456055
+    },
+    {
+      "feature": "numerical__TotalCharges",
+      "original_feature": "TotalCharges",
+      "value": 0.5585888707988921,
+      "value_display": "3549.25",
+      "shap_value": -0.424336701631546,
+      "direction": "away from churn",
+      "abs_shap": 0.424336701631546
+    },
+    {
+      "feature": "categorical__Contract_Month-to-month",
+      "original_feature": "Contract",
+      "value": 1.0,
+      "value_display": "Month-to-month",
+      "shap_value": 0.38723093271255493,
+      "direction": "toward churn",
+      "abs_shap": 0.38723093271255493
+    },
+    {
+      "feature": "categorical__InternetService_Fiber optic",
+      "original_feature": "InternetService",
+      "value": 1.0,
+      "value_display": "Fiber optic",
+      "shap_value": 0.21912768483161926,
+      "direction": "toward churn",
+      "abs_shap": 0.21912768483161926
+    },
+    {
+      "feature": "categorical__PaymentMethod_Electronic check",
+      "original_feature": "PaymentMethod",
+      "value": 1.0,
+      "value_display": "Electronic check",
+      "shap_value": 0.1986289918422699,
+      "direction": "toward churn",
+      "abs_shap": 0.1986289918422699
+    },
+    {
+      "feature": "categorical__PaperlessBilling_No",
+      "original_feature": "PaperlessBilling",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": 0.1313844621181488,
+      "direction": "toward churn",
+      "abs_shap": 0.1313844621181488
+    },
+    {
+      "feature": "categorical__TechSupport_No",
+      "original_feature": "TechSupport",
+      "value": 1.0,
+      "value_display": "No",
+      "shap_value": 0.11950984597206116,
+      "direction": "toward churn",
+      "abs_shap": 0.11950984597206116
+    },
+    {
+      "feature": "categorical__OnlineSecurity_No",
+      "original_feature": "OnlineSecurity",
+      "value": 1.0,
+      "value_display": "No",
+      "shap_value": 0.11559733003377914,
+      "direction": "toward churn",
+      "abs_shap": 0.11559733003377914
+    },
+    {
+      "feature": "categorical__StreamingTV_Yes",
+      "original_feature": "StreamingTV",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": 0.1018441766500473,
+      "direction": "toward churn",
+      "abs_shap": 0.1018441766500473
+    },
+    {
+      "feature": "categorical__MultipleLines_No",
+      "original_feature": "MultipleLines",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": 0.07916944473981857,
+      "direction": "toward churn",
+      "abs_shap": 0.07916944473981857
+    },
+    {
+      "feature": "categorical__OnlineBackup_No",
+      "original_feature": "OnlineBackup",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": -0.07216166704893112,
+      "direction": "away from churn",
+      "abs_shap": 0.07216166704893112
+    },
+    {
+      "feature": "categorical__StreamingMovies_Yes",
+      "original_feature": "StreamingMovies",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": 0.05302818864583969,
+      "direction": "toward churn",
+      "abs_shap": 0.05302818864583969
+    },
+    {
+      "feature": "categorical__Contract_Two year",
+      "original_feature": "Contract",
+      "value": 0.0,
+      "value_display": "not Two year",
+      "shap_value": 0.04254293814301491,
+      "direction": "toward churn",
+      "abs_shap": 0.04254293814301491
+    },
+    {
+      "feature": "numerical__SeniorCitizen",
+      "original_feature": "SeniorCitizen",
+      "value": -0.43837982475052306,
+      "value_display": "0",
+      "shap_value": -0.040267765522003174,
+      "direction": "away from churn",
+      "abs_shap": 0.040267765522003174
+    },
+    {
+      "feature": "categorical__Dependents_No",
+      "original_feature": "Dependents",
+      "value": 1.0,
+      "value_display": "No",
+      "shap_value": 0.03657345473766327,
+      "direction": "toward churn",
+      "abs_shap": 0.03657345473766327
+    },
+    {
+      "feature": "categorical__Contract_One year",
+      "original_feature": "Contract",
+      "value": 0.0,
+      "value_display": "not One year",
+      "shap_value": -0.03049212321639061,
+      "direction": "away from churn",
+      "abs_shap": 0.03049212321639061
+    },
+    {
+      "feature": "categorical__gender_Female",
+      "original_feature": "gender",
+      "value": 0.0,
+      "value_display": "not Female",
+      "shap_value": 0.015544893220067024,
+      "direction": "toward churn",
+      "abs_shap": 0.015544893220067024
+    },
+    {
+      "feature": "categorical__OnlineBackup_Yes",
+      "original_feature": "OnlineBackup",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": -0.012383978813886642,
+      "direction": "away from churn",
+      "abs_shap": 0.012383978813886642
+    },
+    {
+      "feature": "categorical__PaymentMethod_Mailed check",
+      "original_feature": "PaymentMethod",
+      "value": 0.0,
+      "value_display": "not Mailed check",
+      "shap_value": 0.011238333769142628,
+      "direction": "toward churn",
+      "abs_shap": 0.011238333769142628
+    },
+    {
+      "feature": "categorical__PhoneService_No",
+      "original_feature": "PhoneService",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": -0.007428058423101902,
+      "direction": "away from churn",
+      "abs_shap": 0.007428058423101902
+    },
+    {
+      "feature": "categorical__Partner_No",
+      "original_feature": "Partner",
+      "value": 1.0,
+      "value_display": "No",
+      "shap_value": 0.005910342559218407,
+      "direction": "toward churn",
+      "abs_shap": 0.005910342559218407
+    },
+    {
+      "feature": "categorical__StreamingMovies_No",
+      "original_feature": "StreamingMovies",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": 0.005890586879104376,
+      "direction": "toward churn",
+      "abs_shap": 0.005890586879104376
+    },
+    {
+      "feature": "categorical__PaymentMethod_Credit card (automatic)",
+      "original_feature": "PaymentMethod",
+      "value": 0.0,
+      "value_display": "not Credit card (automatic)",
+      "shap_value": 0.004948840010911226,
+      "direction": "toward churn",
+      "abs_shap": 0.004948840010911226
+    },
+    {
+      "feature": "categorical__DeviceProtection_No",
+      "original_feature": "DeviceProtection",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": -0.0045805214904248714,
+      "direction": "away from churn",
+      "abs_shap": 0.0045805214904248714
+    },
+    {
+      "feature": "categorical__StreamingTV_No",
+      "original_feature": "StreamingTV",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": 0.00454444857314229,
+      "direction": "toward churn",
+      "abs_shap": 0.00454444857314229
+    },
+    {
+      "feature": "categorical__InternetService_No",
+      "original_feature": "InternetService",
+      "value": 0.0,
+      "value_display": "not No",
+      "shap_value": 0.003285190789029002,
+      "direction": "toward churn",
+      "abs_shap": 0.003285190789029002
+    },
+    {
+      "feature": "categorical__InternetService_DSL",
+      "original_feature": "InternetService",
+      "value": 0.0,
+      "value_display": "not DSL",
+      "shap_value": 0.0015910826623439789,
+      "direction": "toward churn",
+      "abs_shap": 0.0015910826623439789
+    },
+    {
+      "feature": "categorical__PaymentMethod_Bank transfer (automatic)",
+      "original_feature": "PaymentMethod",
+      "value": 0.0,
+      "value_display": "not Bank transfer (automatic)",
+      "shap_value": -0.0012235329486429691,
+      "direction": "away from churn",
+      "abs_shap": 0.0012235329486429691
+    },
+    {
+      "feature": "categorical__TechSupport_Yes",
+      "original_feature": "TechSupport",
+      "value": 0.0,
+      "value_display": "not Yes",
+      "shap_value": 0.0012225351529195905,
+      "direction": "toward churn",
+      "abs_shap": 0.0012225351529195905
+    },
+    {
+      "feature": "categorical__DeviceProtection_Yes",
+      "original_feature": "DeviceProtection",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": 0.0011612074449658394,
+      "direction": "toward churn",
+      "abs_shap": 0.0011612074449658394
+    },
+    {
+      "feature": "categorical__MultipleLines_Yes",
+      "original_feature": "MultipleLines",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": 0.0004998079966753721,
+      "direction": "toward churn",
+      "abs_shap": 0.0004998079966753721
+    },
+    {
+      "feature": "categorical__OnlineSecurity_Yes",
+      "original_feature": "OnlineSecurity",
+      "value": 0.0,
+      "value_display": "not Yes",
+      "shap_value": 0.0002671789552550763,
+      "direction": "toward churn",
+      "abs_shap": 0.0002671789552550763
+    },
+    {
+      "feature": "categorical__gender_Male",
+      "original_feature": "gender",
+      "value": 1.0,
+      "value_display": "Male",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__Dependents_Yes",
+      "original_feature": "Dependents",
+      "value": 0.0,
+      "value_display": "not Yes",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__PaperlessBilling_Yes",
+      "original_feature": "PaperlessBilling",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__Partner_Yes",
+      "original_feature": "Partner",
+      "value": 0.0,
+      "value_display": "not Yes",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__MultipleLines_No phone service",
+      "original_feature": "MultipleLines",
+      "value": 0.0,
+      "value_display": "not No phone service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__PhoneService_Yes",
+      "original_feature": "PhoneService",
+      "value": 1.0,
+      "value_display": "Yes",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__StreamingMovies_No internet service",
+      "original_feature": "StreamingMovies",
+      "value": 0.0,
+      "value_display": "not No internet service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__OnlineSecurity_No internet service",
+      "original_feature": "OnlineSecurity",
+      "value": 0.0,
+      "value_display": "not No internet service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__StreamingTV_No internet service",
+      "original_feature": "StreamingTV",
+      "value": 0.0,
+      "value_display": "not No internet service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__TechSupport_No internet service",
+      "original_feature": "TechSupport",
+      "value": 0.0,
+      "value_display": "not No internet service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__DeviceProtection_No internet service",
+      "original_feature": "DeviceProtection",
+      "value": 0.0,
+      "value_display": "not No internet service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    },
+    {
+      "feature": "categorical__OnlineBackup_No internet service",
+      "original_feature": "OnlineBackup",
+      "value": 0.0,
+      "value_display": "not No internet service",
+      "shap_value": 0.0,
+      "direction": "toward churn",
+      "abs_shap": 0.0
+    }
+  ]
+}

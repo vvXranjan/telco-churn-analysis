@@ -1,0 +1,42 @@
+{
+  "artifact": "models/telco_churn_xgboost.joblib",
+  "model_type": "Pipeline(ColumnTransformer preprocessing + XGBClassifier)",
+  "model_name": "XGBoost",
+  "random_state": 42,
+  "selected_hyperparameters": {
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "n_estimators": 200,
+    "subsample": 0.8
+  },
+  "scale_pos_weight": 2.7746153846153847,
+  "decision_threshold": 0.525,
+  "dataset_path": "data/cleaned/telco_churn_clean.csv",
+  "duplicate_handling": "22 exact duplicate rows removed from a modeling copy before splitting; source file unchanged",
+  "training_row_count": 4907,
+  "dev_row_count": 1051,
+  "holdout_row_count": 1052,
+  "feature_count_before_preprocessing": 19,
+  "transformed_feature_count": 45,
+  "package_versions": {
+    "xgboost": "3.4.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "sha256": "79cfdceeda66e597ed406f478c1d25cd28da242294bc58e87da3706bbfb9ae8f",
+  "holdout_evaluation": {
+    "roc_auc": 0.8529747249231454,
+    "pr_auc": 0.6570838810469541,
+    "precision": 0.5369458128078818,
+    "recall": 0.7813620071684588,
+    "f1": 0.6364963503649635,
+    "accuracy": 0.7633079847908745,
+    "threshold": 0.525,
+    "confusion_matrix": [
+      585,
+      188,
+      61,
+      218
+    ]
+  }
+}
