@@ -52,7 +52,16 @@ def test_predict_evidence_matches_notebook04(customer_38_features, evidence_json
     body = resp.json()
     api_by_feature = {e["feature"]: e["shap_value"] for e in body["shap_evidence"]}
     nb_by_feature = {e["feature"]: e["shap_value"] for e in evidence_json["evidence"]}
-    assert api_by_feature == nb_by_feature
+    # Exact feature-name correspondence and all 45 features must be present.
+    assert set(api_by_feature) == set(nb_by_feature)
+    assert len(api_by_feature) == 45
+    assert all(np.isfinite(v) for v in api_by_feature.values())
+    # SHAP values compared with a small tolerance for cross-platform
+    # floating-point variance (~1e-10..1e-11 between macOS and Ubuntu).
+    for feature in nb_by_feature:
+        assert np.isclose(
+            api_by_feature[feature], nb_by_feature[feature], rtol=0, atol=1e-6
+        ), f"SHAP mismatch for {feature}"
 
 
 def test_predict_invalid_missing_field(customer_38_features):

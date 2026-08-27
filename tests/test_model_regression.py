@@ -55,7 +55,16 @@ def test_example_customer_local_shap(customer_38_features, evidence_json):
     assert len(evidence) == 45
     by_feature = {e["feature"]: e["shap_value"] for e in evidence}
     expected = {e["feature"]: e["shap_value"] for e in evidence_json["evidence"]}
-    assert by_feature == expected  # identical SHAP values to Notebook 04
+    # Exact feature-name correspondence and all 45 features must be present.
+    assert set(by_feature) == set(expected)
+    assert len(by_feature) == 45
+    assert all(np.isfinite(v) for v in by_feature.values())
+    # SHAP values compared with a small tolerance for cross-platform
+    # floating-point variance (~1e-10..1e-11 between macOS and Ubuntu).
+    for feature in expected:
+        assert np.isclose(
+            by_feature[feature], expected[feature], rtol=0, atol=1e-6
+        ), f"SHAP mismatch for {feature}"
     # Top positive contributors remain consistent.
     assert np.isclose(by_feature["numerical__MonthlyCharges"], 0.5016, atol=1e-4)
     assert np.isclose(
